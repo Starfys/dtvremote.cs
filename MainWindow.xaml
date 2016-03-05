@@ -1,0 +1,38 @@
+﻿<Window x:Class="Remote.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Remote"
+        mc:Ignorable="d"
+        Title="Remote" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="power" Content="Power" HorizontalAlignment="Left" Height="25" Margin="455,10,0,0" VerticalAlignment="Top" Width="52" ToolTip="Turns the reciever on or off." Tag="power"  Click="key_Click"/>
+        <TextBox x:Name="ipAddress" HorizontalAlignment="Left" Height="25" Margin="71,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="ipAddressLabel" HorizontalAlignment="Left" TextWrapping="Wrap" Text="IP Address" VerticalAlignment="Top" Margin="10,10,0,0" Height="25"/>
+        <Button x:Name="rewind" Content="⏪" HorizontalAlignment="Left" Height="30" Margin="10,45,0,0" VerticalAlignment="Top" Width="40" Tag="rew"  Click="key_Click"/>
+        <Button x:Name="play" Content="▶️" HorizontalAlignment="Left" Height="30" Margin="55,45,0,0" VerticalAlignment="Top" Width="40" Tag="play"  Click="key_Click"/>
+        <Button x:Name="fastForward" Content="⏩" HorizontalAlignment="Left" Height="30" Margin="100,45,0,0" VerticalAlignment="Top" Width="40" Tag="ffwd"  Click="key_Click"/>
+        <Button x:Name="stop" Content="⏹" HorizontalAlignment="Left" Height="30" Margin="10,80,0,0" VerticalAlignment="Top" Width="40" Tag="stop"  Click="key_Click"/>
+        <Button x:Name="record" Content="⏺" HorizontalAlignment="Left" Height="30" Margin="100,80,0,0" VerticalAlignment="Top" Width="40" Tag="record"  Click="key_Click"/>
+        <Button x:Name="replay" Content="🔄" HorizontalAlignment="Left" Height="30" Margin="10,115,0,0" VerticalAlignment="Top" Width="40" Tag="replay"  Click="key_Click"/>
+        <Button x:Name="advance" Content="⏭" HorizontalAlignment="Left" Height="30" Margin="100,115,0,0" VerticalAlignment="Top" Width="40" Tag="advance"  Click="key_Click"/>
+        <Button x:Name="pause" Content="⏸" HorizontalAlignment="Left" Height="30" Margin="55,80,0,0" VerticalAlignment="Top" Width="40"  Tag="pause"  Click="key_Click"/>
+        <Button x:Name="num7" Content="7" HorizontalAlignment="Left" Height="30" Margin="10,150,0,0" VerticalAlignment="Top" Width="40" Tag="7"  Click="key_Click"/>
+        <Button x:Name="num8" Content="8" HorizontalAlignment="Left" Height="30" Margin="55,150,0,0" VerticalAlignment="Top" Width="40" Tag="8"  Click="key_Click"/>
+        <Button x:Name="num9" Content="9" HorizontalAlignment="Left" Height="30" Margin="100,150,0,0" VerticalAlignment="Top" Width="40" Tag="9"  Click="key_Click"/>
+        <Button x:Name="num4" Content="4" HorizontalAlignment="Left" Height="30" Margin="10,185,0,0" VerticalAlignment="Top" Width="40" Tag="4"  Click="key_Click"/>
+        <Button x:Name="num6" Content="6" HorizontalAlignment="Left" Height="30" Margin="100,185,0,0" VerticalAlignment="Top" Width="40" Tag="6"  Click="key_Click"/>
+        <Button x:Name="num1" Content="1" HorizontalAlignment="Left" Height="30" Margin="10,220,0,0" VerticalAlignment="Top" Width="40" Tag="1"  Click="key_Click"/>
+        <Button x:Name="num3" Content="3" HorizontalAlignment="Left" Height="30" Margin="100,220,0,0" VerticalAlignment="Top" Width="40" Tag="3"  Click="key_Click"/>
+        <Button x:Name="num5" Content="5" HorizontalAlignment="Left" Height="30" Margin="55,185,0,0" VerticalAlignment="Top" Width="40" Tag="5"  Click="key_Click"/>
+        <Button x:Name="num2" Content="2" HorizontalAlignment="Left" Height="30" Margin="55,220,0,0" VerticalAlignment="Top" Width="40" Tag="2"  Click="key_Click"/>
+        <Button x:Name="dash" Content="-" HorizontalAlignment="Left" Height="30" Margin="10,255,0,0" VerticalAlignment="Top" Width="40" Tag="dash"  Click="key_Click"/>
+        <Button x:Name="enter" Content="Enter" HorizontalAlignment="Left" Height="30" Margin="100,255,0,0" VerticalAlignment="Top" Width="40" Tag="enter"  Click="key_Click"/>
+        <Button x:Name="num0" Content="0" HorizontalAlignment="Left" Height="30" Margin="55,255,0,0" VerticalAlignment="Top" Width="40" Tag="0"  Click="key_Click"/>
+        <Button x:Name="connect" Content="Connect" HorizontalAlignment="Left" Height="25" Margin="196,10,0,0" VerticalAlignment="Top" Width="54" Click="connect_Click"/>
+        <TextBlock x:Name="connectionStatus" HorizontalAlignment="Left" TextWrapping="Wrap" Text="DISCONNECTED" VerticalAlignment="Top" Margin="255,10,0,0" Height="25" Width="195"/>
+        <TextBlock x:Name="debugBox" HorizontalAlignment="Left" Height="240" Margin="145,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362"/>
+
+    </Grid>
+</Window>
